@@ -8,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class PersonasComponent {
 
   deshabilitar: boolean = false;
-  mensaje: string = "No se han agregado personas";
+  mensaje: string = "";
   titulo: string = "Ingeniero";
+  mostrar: boolean = false;
 
   //Metodo publico
   public agregarPersona () : void {
+    this.mostrar = true;
     this.mensaje = "Persona agregada";
   }
 
